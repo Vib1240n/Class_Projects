@@ -1,0 +1,25 @@
+Script started on Mon 01 Feb 2021 03:30:29 PM PST
+Note: $DISPLAY is set to  for X windows.
+
+    *** Notice: This is an ECS IT resource, intended to be used for purposes
+        related to the educational activities of faculty, staff and students
+        of California State University Sacramento. Any other use is a
+        violation of University and College policy.
+
+
+[?1034h[cs6012@athena ~]> gcc lab1.c
+gcc: lab1.c: No such file or directory
+gcc: no input files
+[cs6012@athena ~]> cd cs60
+[cs6012@athena cs60]> gcc lab1.c
+[cs6012@athena cs60]> a.out
+
+Lab1. 
+
+Hello World
+Hi, Vibhore Sagar
+ 'You miss 100 percent of the shots you dont take' - Wayne Gretzky
+[cs6012@athena cs60]> exit
+exit
+
+Script done on Mon 01 Feb 2021 03:31:19 PM PST

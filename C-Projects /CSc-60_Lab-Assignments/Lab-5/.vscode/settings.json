@@ -1,0 +1,11 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools",
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/Users/vibhorsagar/Library/Mobile Documents/com~apple~CloudDocs/Development/C-Projects /CSc-60_Lab-Assignments/Lab-5",
+            "binaryPath": "/Users/vibhorsagar/Library/Mobile Documents/com~apple~CloudDocs/Development/C-Projects /CSc-60_Lab-Assignments/Lab-5/lab5",
+            "binaryArgs": []
+        }
+    ]
+}

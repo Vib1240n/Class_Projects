@@ -1,0 +1,10 @@
+make lab5 --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/vibhorsagar/Library/Mobile Documents/com~apple~CloudDocs/Development/C-Projects /CSc-60_Lab-Assignments/Lab-5'
+cc    -c -o lab5.o lab5.c
+gcc -c open_out_file.c -lm
+gcc -c open_in_file.c -lm
+gcc -c print_headers.c -lm
+gcc -c find_box_values.c
+gcc lab5.o open_out_file.o open_in_file.o print_headers.o find_box_values.o -o lab5 -lm
+make: Leaving directory `/Users/vibhorsagar/Library/Mobile Documents/com~apple~CloudDocs/Development/C-Projects /CSc-60_Lab-Assignments/Lab-5'
+ 

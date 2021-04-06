@@ -1,0 +1,30 @@
+Script started on Tue 09 Mar 2021 08:10:12 PM PST
+Note: $DISPLAY is set to  for X windows.
+
+    *** Notice: This is an ECS IT resource, intended to be used for purposes
+        related to the educational activities of faculty, staff and students
+        of California State University Sacramento. Any other use is a
+        violation of University and College policy.
+
+
+[?1034h[cs6012@athena lab4]> gcc lab4.c
+[cs6012@athena lab4]> a.out
+[cs6012@athena lab4]> cat lab5[K4.txt
+Vibhore Sagar  Lab 4. 
+
+Data on Parabolas 
+
+ Length      Depth        Area   
+--------   ---------   --------- 
+   12.60      24.80      208.320
+
+    5.60       7.80       29.120
+
+    7.85      12.61       65.992
+
+    8.90       4.70       27.887
+
+[cs6012@athena lab4]> exit
+exit
+
+Script done on Tue 09 Mar 2021 08:10:36 PM PST

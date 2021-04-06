@@ -1,0 +1,214 @@
+Script started on Wed 24 Feb 2021 11:04:06 PM PST
+Note: $DISPLAY is set to  for X windows.
+
+    *** Notice: This is an ECS IT resource, intended to be used for purposes
+        related to the educational activities of faculty, staff and students
+        of California State University Sacramento. Any other use is a
+        violation of University and College policy.
+
+
+[?1034h[cs6012@athena ~]> history -c
+[cs6012@athena ~]> cs[Kd cs60
+[cs6012@athena cs60]> mkdir lab2
+[cs6012@athena cs60]> cd lab2
+[cs6012@athena lab2]> pwd
+/gaia/class/cs601/cs6012/cs60/lab2
+[cs6012@athena lab2]> mkdir aaa
+[cs6012@athena lab2]> cd aaa
+[cs6012@athena aaa]> pwd
+/gaia/class/cs601/cs6012/cs60/lab2/aaa
+[cs6012@athena aaa]> cd ..
+[cs6012@athena lab2]> pwd
+/gaia/class/cs601/cs6012/cs60/lab2
+[cs6012@athena lab2]> cd ..
+[cs6012@athena cs60]> cd [K[K[Kcd lab2
+[cs6012@athena lab2]> ls > file1
+[cs6012@athena lab2]> cat file1
+aaa/
+file1
+[cs6012@athena lab2]> less file1
+[?1049h[?1h=aaa/
+file1
+[7mfile1 (END) [27m[K[K[?1l>[?1049l[cs6012@athena lab2]> file *
+aaa:   setgid directory
+file1: ASCII text
+[cs6012@athena lab2]> wc file1
+ 2  2 11 file1
+[cs6012@athena lab2]> wc *
+wc: aaa: Is a directory
+      0       0       0 aaa
+      2       2      11 file1
+      2       2      11 total
+[cs6012@athena lab2]> grep lab file1
+[cs6012@athena lab2]> cp file 1[K[K1 file2
+[cs6012@athena lab2]> ls
+aaa/  file1  file2
+[cs6012@athena lab2]> cd aaa
+[cs6012@athena aaa]> cp ../file1 .
+[cs6012@athena aaa]> ls
+file1
+[cs6012@athena aaa]> mv file1 file2
+[cs6012@athena aaa]> ls
+file2
+[cs6012@athena aaa]> mv ../file1 .
+[cs6012@athena aaa]> cd ..
+[cs6012@athena lab2]> ls
+aaa/  file2
+[cs6012@athena lab2]> cd aaa
+[cs6012@athena aaa]> ls
+file1  file2
+[cs6012@athena aaa]> cmp file1 file2
+[cs6012@athena aaa]> ls > aaalist
+[cs6012@athena aaa]> cp[Kmp file1 aaalist
+file1 aaalist differ: byte 4, line 1
+[cs6012@athena aaa]> diff file1 aaalist
+1c1
+< aaa/
+---
+> aaalist
+2a3
+> file2
+[cs6012@athena aaa]> rm -i file1
+rm: remove regular file `file1'? y
+[cs6012@athena aaa]> ls
+aaalist  file2
+[cs6012@athena aaa]> ps u
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+cs6012   18479  0.0  0.0   6260  2800 pts/9    Ss   23:02   0:00 -bash
+cs6012   18650  0.0  0.0   4136   744 pts/9    S+   23:04   0:00 script VibhoreSagar_lab
+cs6012   18652  0.0  0.0   4648   352 pts/9    S+   23:04   0:00 script VibhoreSagar_lab
+cs6012   18653  0.0  0.0   5392  1736 pts/18   Ss   23:04   0:00 bash -i
+cs6012   19214  2.0  0.0   5096  1216 pts/18   R+   23:07   0:00 ps u
+[cs6012@athena aaa]> ps -l
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S 50001 18653 18652  0  80   0 -  1348 -      pts/18   00:00:00 bash
+0 R 50001 19220 18653  0  80   0 -  1222 -      pts/18   00:00:00 ps
+[cs6012@athena aaa]> !!
+ps -l
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S 50001 18653 18652  0  80   0 -  1348 -      pts/18   00:00:00 bash
+0 R 50001 19222 18653  1  80   0 -  1222 -      pts/18   00:00:00 ps
+[cs6012@athena aaa]> history
+    1  2021-02-24 23:04:18 cd cs60
+    2  2021-02-24 23:04:21 mkdir lab2
+    3  2021-02-24 23:04:27 cd lab2
+    4  2021-02-24 23:04:28 pwd
+    5  2021-02-24 23:04:33 mkdir aaa
+    6  2021-02-24 23:04:36 cd aaa
+    7  2021-02-24 23:04:37 pwd
+    8  2021-02-24 23:04:39 cd ..
+    9  2021-02-24 23:04:41 pwd
+   10  2021-02-24 23:04:50 cd ..
+   11  2021-02-24 23:05:33 cd lab2
+   12  2021-02-24 23:05:40 ls > file1
+   13  2021-02-24 23:05:44 cat file1
+   14  2021-02-24 23:05:52 less file1
+   15  2021-02-24 23:05:59 file *
+   16  2021-02-24 23:06:02 wc file1
+   17  2021-02-24 23:06:03 wc *
+   18  2021-02-24 23:06:12 grep lab file1
+   19  2021-02-24 23:06:19 cp file1 file2
+   20  2021-02-24 23:06:20 ls
+   21  2021-02-24 23:06:24 cd aaa
+   22  2021-02-24 23:06:32 cp ../file1 .
+   23  2021-02-24 23:06:33 ls
+   24  2021-02-24 23:06:39 mv file1 file2
+   25  2021-02-24 23:06:39 ls
+   26  2021-02-24 23:06:49 mv ../file1 .
+   27  2021-02-24 23:06:51 cd ..
+   28  2021-02-24 23:06:51 ls
+   29  2021-02-24 23:06:54 cd aaa
+   30  2021-02-24 23:06:54 ls
+   31  2021-02-24 23:07:03 cmp file1 file2
+   32  2021-02-24 23:07:15 ls > aaalist
+   33  2021-02-24 23:07:24 cmp file1 aaalist
+   34  2021-02-24 23:07:34 diff file1 aaalist
+   35  2021-02-24 23:07:39 rm -i file1
+   36  2021-02-24 23:07:43 ls
+   37  2021-02-24 23:07:48 ps u
+   38  2021-02-24 23:07:56 ps -l
+   39  2021-02-24 23:08:02 history
+[cs6012@athena aaa]> cd ../..
+[cs6012@athena cs60]> pwd
+/gaia/class/cs601/cs6012/cs60
+[cs6012@athena cs60]> cd lab2[K1
+[cs6012@athena lab1]> head lab1.c
+//Vibhore Sagar
+//Lab1
+
+#include <stdlib.h>
+#include <stdio.h>
+
+int main(void)
+{
+   printf("\nLab1. \n\n");
+   printf("Hello World\n");
+[cs6012@athena lab1]> tail lab1.c
+{
+   printf("\nLab1. \n\n");
+   printf("Hello World\n");
+   printf("Hi, Vibhore Sagar\n");
+   printf(" 'You miss 100 percent of the shots you dont take' - Wayne Gretzky\n");
+
+   return EXIT_SUCCESS;
+}
+
+
+[cs6012@athena lab1]> ls -al | less
+[?1049h[?1h=total 12
+drwx--S--- 2 cs6012 cs601 4096 Feb 24 22:58 ./
+drwx--S--- 4 cs6012 cs601 4096 Feb 24 23:04 ../
+-rw------- 1 cs6012 cs601  282 Feb  1 15:27 lab1.c
+[7m(END) [27m[K[K[?1l>[?1049l[cs6012@athena lab1]> histo[K[Ktory
+    1  2021-02-24 23:04:18 cd cs60
+    2  2021-02-24 23:04:21 mkdir lab2
+    3  2021-02-24 23:04:27 cd lab2
+    4  2021-02-24 23:04:28 pwd
+    5  2021-02-24 23:04:33 mkdir aaa
+    6  2021-02-24 23:04:36 cd aaa
+    7  2021-02-24 23:04:37 pwd
+    8  2021-02-24 23:04:39 cd ..
+    9  2021-02-24 23:04:41 pwd
+   10  2021-02-24 23:04:50 cd ..
+   11  2021-02-24 23:05:33 cd lab2
+   12  2021-02-24 23:05:40 ls > file1
+   13  2021-02-24 23:05:44 cat file1
+   14  2021-02-24 23:05:52 less file1
+   15  2021-02-24 23:05:59 file *
+   16  2021-02-24 23:06:02 wc file1
+   17  2021-02-24 23:06:03 wc *
+   18  2021-02-24 23:06:12 grep lab file1
+   19  2021-02-24 23:06:19 cp file1 file2
+   20  2021-02-24 23:06:20 ls
+   21  2021-02-24 23:06:24 cd aaa
+   22  2021-02-24 23:06:32 cp ../file1 .
+   23  2021-02-24 23:06:33 ls
+   24  2021-02-24 23:06:39 mv file1 file2
+   25  2021-02-24 23:06:39 ls
+   26  2021-02-24 23:06:49 mv ../file1 .
+   27  2021-02-24 23:06:51 cd ..
+   28  2021-02-24 23:06:51 ls
+   29  2021-02-24 23:06:54 cd aaa
+   30  2021-02-24 23:06:54 ls
+   31  2021-02-24 23:07:03 cmp file1 file2
+   32  2021-02-24 23:07:15 ls > aaalist
+   33  2021-02-24 23:07:24 cmp file1 aaalist
+   34  2021-02-24 23:07:34 diff file1 aaalist
+   35  2021-02-24 23:07:39 rm -i file1
+   36  2021-02-24 23:07:43 ls
+   37  2021-02-24 23:07:48 ps u
+   38  2021-02-24 23:07:56 ps -l
+   39  2021-02-24 23:08:02 history
+   40  2021-02-24 23:08:10 cd ../..
+   41  2021-02-24 23:08:14 pwd
+   42  2021-02-24 23:08:17 cd lab1
+   43  2021-02-24 23:08:32 head lab1.c
+   44  2021-02-24 23:08:54 tail lab1.c
+   45  2021-02-24 23:09:07 ls -al | less
+   46  2021-02-24 23:09:15 history
+[cs6012@athena lab1]> echo $SHELL
+/bin/bash
+[cs6012@athena lab1]> exit
+exit
+
+Script done on Wed 24 Feb 2021 11:09:40 PM PST
