@@ -1,6 +1,7 @@
 # **Introduction**
 
-This repository holds all the files from _Spring 2021_ Computer Science classes. 2. Files are broken down into directories according to their respective languages.
+1. This repository holds all the files from _Spring 2021_ Computer Science classes. 
+2. Files are broken down into directories according to their respective languages.
 
 ## **Projects**
 
