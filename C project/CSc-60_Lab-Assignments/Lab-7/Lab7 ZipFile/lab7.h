@@ -9,23 +9,20 @@
 #define TRIES 3
 
 #define IN_FILENAME "lab7.dat"
-#define IN_FILENAME "lab7sample.dat"
+//#define IN_FILENAME "lab7sample.dat"
 
 //The final data file has a length of 10, sample file has a length of 4.
 #define NRACERS 10	
-#define NRACERS 4
+// #define NRACERS 4
 
 
 /*-----------------------------------------------------------*/
 /* Structure Section */
 
 	// Put your two structures here as in the directions.
-	
-
-/*-----------------------------------------------------------*/
 typedef struct{
 	char d_name[21];
-	double d_tries[3];
+	double d_tries[TRIES];
 	double d_best_time;
 	double deviation;
 }driver_t;
@@ -38,6 +35,10 @@ typedef struct{
 	double median;
 
 }stats_t;
+	
+
+/*-----------------------------------------------------------*/
+
 /* Function Prototypes Section */
 
 	/* get_data is a function to get and read data         */

@@ -1,0 +1,6 @@
+make all --dry-run --keep-going --print-directory
+make: Entering directory `/Users/vibhorsagar/Library/Mobile Documents/com~apple~CloudDocs/Development/C project/CSc-60_Lab-Assignments/Lab-7/Lab7 ZipFile'
+make: Leaving directory `/Users/vibhorsagar/Library/Mobile Documents/com~apple~CloudDocs/Development/C project/CSc-60_Lab-Assignments/Lab-7/Lab7 ZipFile'
+ 
+make: *** No rule to make target `all'.
+ 

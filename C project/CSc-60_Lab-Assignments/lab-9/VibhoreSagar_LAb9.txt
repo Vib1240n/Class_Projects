@@ -1,0 +1,45 @@
+Script started on Sat 01 May 2021 05:02:04 PM PDT
+Note: $DISPLAY is set to  for X windows.
+
+    *** Notice: This is an ECS IT resource, intended to be used for purposes
+        related to the educational activities of faculty, staff and students
+        of California State University Sacramento. Any other use is a
+        violation of University and College policy.
+
+
+[cs6012@athena lab9]> touch lab9_10.h
+[cs6012@athena lab9]> make
+gcc -c lab9.c -Wall
+gcc -c ParseLine.c -Wall
+gcc lab9.o ParseLine.o -o lab9 -Wall
+[cs6012@athena lab9]> lab9
+
+FillThisIn> 
+
+FillThisIn>  
+
+FillThisIn> pwd
+/gaia/class/cs601/cs6012/cs60/lab9 
+
+FillThisIn> cd ..
+
+FillThisIn> pwd
+/gaia/class/cs601/cs6012/cs60 
+
+FillThisIn> cd lab9
+
+FillThisIn> 
+
+FillThisIn> pwd
+/gaia/class/cs601/cs6012/cs60/lab9 
+
+FillThisIn> cd
+
+FillThisIn> pwd
+/gaia/class/cs601/cs6012 
+
+FillThisIn> exit
+[cs6012@athena lab9]> exit
+exit
+
+Script done on Sat 01 May 2021 05:03:01 PM PDT

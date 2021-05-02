@@ -1,0 +1,44 @@
+Script started on Sat 17 Apr 2021 04:15:11 PM PDT
+Note: $DISPLAY is set to  for X windows.
+
+    *** Notice: This is an ECS IT resource, intended to be used for purposes
+        related to the educational activities of faculty, staff and students
+        of California State University Sacramento. Any other use is a
+        violation of University and College policy.
+
+
+[?1034h[cs6012@athena lab7]> make
+make: `Lab7' is up to date.
+[cs6012@athena lab7]> Lab6[K7
+[cs6012@athena lab7]> cat lab6.[K[K6[K7.txt
+
+Vibhore Sagar.  Lab 7 output. 
+
+Track Results
+
+Drivers                  Try 1       Try 2       Try 3      Best Time   Deviation
+--------------------   ---------   ---------   ---------   ----------   ---------
+John Potato             123.100     122.981     122.670      122.670      12.944
+Hector Sooner           125.021     124.148     124.672      124.148      11.466
+Jesse Farmer            135.193     133.978     133.559      124.148      11.466
+Kasey Forest            132.670     131.573     131.831      124.148      11.466
+Lori Floom              131.142     131.728     132.230      124.148      11.466
+Ruby Blank              131.278     127.912     128.807      124.148      11.466
+Sonny Blanket           131.604     131.859     131.970      124.148      11.466
+William Archer          133.933     131.467     132.010      124.148      11.466
+Dan Artichoke           129.389     128.906     128.593      128.593       7.021
+Bridget Brook           135.614     134.102     133.740      133.740       1.874
+
+
+ The average of best times =  125.404 
+
+ The track fast time       =  135.614 
+
+ The track slow time       =  135.614 
+
+ The median of best times  =  124.148 
+
+[cs6012@athena lab7]> exit
+exit
+
+Script done on Sat 17 Apr 2021 04:15:25 PM PDT

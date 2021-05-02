@@ -21,7 +21,7 @@ void get_data (char *filename,                    /* input   */
 	for(d = 0; d < NRACERS; d++)
 	{
 	   fscanf(in_file, "%20c%lf%lf%lf\n", 
-		      &(driver_list[d].d_name),
+		      (driver_list[d].d_name),
 		      &(driver_list[d].d_tries[0]),
 	          &(driver_list[d].d_tries[1]),
 	          &(driver_list[d].d_tries[2]) ); 

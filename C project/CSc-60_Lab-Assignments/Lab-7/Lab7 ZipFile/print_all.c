@@ -9,14 +9,12 @@ void print_all(FILE * out_file,
 {
 	int d,t;
 
-	fprintf(out_file, "\nYour Name.  Lab 7 output. \n");
+	fprintf(out_file, "\nVibhore Sagar.  Lab 7 output. \n");
 
 	fprintf(out_file, "\nTrack Results");
 
-	fprintf(out_file,"\n\nDrivers                  Try 1  "
-		"     Try 2       Try 3      Best Time   Deviation");
-	fprintf(out_file,  "\n--------------------   ---------"
-		"   ---------   ---------   ----------   ---------\n");                          
+	fprintf(out_file,"\n\nDrivers                  Try 1  " "     Try 2       Try 3      Best Time   Deviation");
+	fprintf(out_file,  "\n--------------------   ---------" "   ---------   ---------   ----------   ---------\n");                          
 
 	for (d = 0; d< NRACERS; d++)
 	{

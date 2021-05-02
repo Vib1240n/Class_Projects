@@ -5,13 +5,10 @@
 
 int main(void)
 {
-	struct driver_t driver_list[NRACERS];
-	struct 
+	driver_t driver_list[NRACERS];
 	stats_t race_stats = {0.0, 0.0, 0.0, 0.0};  
 	
    	FILE * out_file;   /* file pointer for the output file    */
-			
-	/* Start the action. */
 
 	out_file = open_out_file ();
 	get_data(IN_FILENAME, driver_list);
