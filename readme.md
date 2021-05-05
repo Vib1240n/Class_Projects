@@ -7,7 +7,11 @@
 
 ### C projects
 
-1. Contain all the Lab files from CSc-60
+1. Contains all the Lab files from CSc-60
+
+### C++
+
+1. Contains files of projects written in c++
 
 ### Java-Projects
 
@@ -23,6 +27,3 @@
 
 1. Contains all the temporary files from other authors' projects
 
-### C++
-
-1. Contains files of projects written in c++
