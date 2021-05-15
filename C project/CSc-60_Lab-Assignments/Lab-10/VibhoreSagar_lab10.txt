@@ -1,0 +1,317 @@
+Script started on Fri 14 May 2021 07:09:42 PM PDT
+Note: $DISPLAY is set to  for X windows.
+
+
+
+    *** Notice: This is an ECS IT resource, intended to be used for purposes
+
+        related to the educational activities of faculty, staff and students
+
+        of California State University Sacramento. Any other use is a
+
+        violation of University and College policy.
+
+
+
+
+
+[cs6012@athena lab10]> touch lab9_10.h
+
+[cs6012@athena lab10]> make
+
+gcc -c lab10.c lab9_10.h -Wall
+
+gcc -c ParseLine.c lab9_10.h -Wall
+
+gcc -c ProcessInput.c lab9_10.h -Wall
+
+gcc -c Redirection.c lab9_10.h  -Wall
+
+gcc -c RunExternalCommand.c lab9_10.h  -Wall
+
+gcc lab10.o ParseLine.o ProcessInput.o Redirection.o RunExternalCommand.o -o lab10 -Wall
+
+[cs6012@athena lab10]> lab10
+
+
+
+CSc60MSH ls > lsout
+
+Argc = 3 
+
+Argv 0 = ls 
+
+Argv 1 = > 
+
+Argv 2 = lsout 
+
+Child returned status: 0
+
+
+
+
+
+CSc60MSH cat lsout
+
+Argc = 2 
+
+Argv 0 = cat 
+
+Argv 1 = lsout 
+
+execvp.c
+
+lab10
+
+lab10.c
+
+lab10.o
+
+lab9_10.c
+
+lab9_10.h
+
+lab9_10.h.gch
+
+lsout
+
+makefile
+
+ParseLine.c
+
+ParseLine.o
+
+ProcessInput.c
+
+ProcessInput.o
+
+redir.c
+
+Redirection.c
+
+Redirection.o
+
+RunExternalCommand.c
+
+RunExternalCommand.o
+
+VibhoreSagar_lab10.txt
+
+waitpid.c
+
+waitpid.o
+
+wcout
+
+Child returned status: 0
+
+
+
+
+
+CSc60MSH ls > lsout > file1
+
+Argc = 5 
+
+Argv 0 = ls 
+
+Argv 1 = > 
+
+Argv 2 = lsout 
+
+Argv 3 = > 
+
+Argv 4 = file1 
+
+Error. Cannot output to more than one file 
+
+Child returned status: 256
+
+
+
+
+
+CSc60MSH cat foo.txt
+
+Argc = 2 
+
+Argv 0 = cat 
+
+Argv 1 = foo.txt 
+
+cat: foo.txt: No such file or directory
+
+Child returned status: 256
+
+
+
+
+
+CSc60MSH > lsout
+
+Argc = 2 
+
+Argv 0 = > 
+
+Argv 1 = lsout 
+
+Error. Cannot input to more than one file 
+
+Child returned status: 256
+
+
+
+
+
+CSc60MSH < lsout
+
+Argc = 2 
+
+Argv 0 = < 
+
+Argv 1 = lsout 
+
+Error. No COmmand Entered 
+
+Child returned status: 256
+
+
+
+
+
+CSc60MSH wc < lsout
+
+Argc = 3 
+
+Argv 0 = wc 
+
+Argv 1 = < 
+
+Argv 2 = lsout 
+
+ 22  22 261
+
+Child returned status: 0
+
+
+
+
+
+CSc60MSH wc < lsout > wcout
+
+Argc = 5 
+
+Argv 0 = wc 
+
+Argv 1 = < 
+
+Argv 2 = lsout 
+
+Argv 3 = > 
+
+Argv 4 = wcout 
+
+Child returned status: 0
+
+
+
+
+
+CSc60MSH cat wcout
+
+Argc = 2 
+
+Argv 0 = cat 
+
+Argv 1 = wcout 
+
+ 22  22 261
+
+Child returned status: 0
+
+
+
+
+
+CSc60MSH wc < lsout < wcout
+
+Argc = 5 
+
+Argv 0 = wc 
+
+Argv 1 = < 
+
+Argv 2 = lsout 
+
+Argv 3 = < 
+
+Argv 4 = wcout 
+
+Error. Cannot output to more than one file 
+
+Child returned status: 256
+
+
+
+
+
+CSc60MSH cd ../lab1
+
+Argc = 2 
+
+Argv 0 = cd 
+
+Argv 1 = ../lab1 
+
+
+
+CSc60MSH gcc lab1.c
+
+Argc = 2 
+
+Argv 0 = gcc 
+
+Argv 1 = lab1.c 
+
+Child returned status: 0
+
+
+
+
+
+CSc60MSH a.out
+
+Argc = 1 
+
+Argv 0 = a.out 
+
+
+
+Lab1. 
+
+
+
+Hello World
+
+Hi, Vibhore Sagar
+
+ 'You miss 100 percent of the shots you dont take' - Wayne Gretzky
+
+Child returned status: 0
+
+
+
+
+
+CSc60MSH exit
+
+Argc = 1 
+
+Argv 0 = exit 
+
+[cs6012@athena lab10]> exit
+
+exit
+
+
+Script done on Fri 14 May 2021 07:12:22 PM PDT
