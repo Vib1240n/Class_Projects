@@ -10,6 +10,7 @@ double total;
 
 int main()
 {
+    
   while (repeat != "-1")
   {
     cout << "What size pizza did you order? (m/l) ";

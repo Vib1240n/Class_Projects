@@ -39,7 +39,7 @@ class Result {
         */
 
         int max =0;
-        for( int i =0; i < skillLevel;.size(); i ++){
+        for( int i =0; i < skillLevel.size(); i ++){
             if(skillLevel.get(i) > max){
                 max = skillLevel.get(i);
             }
@@ -61,9 +61,6 @@ class Result {
                 }
             }
             }
-        }
-
-
         return result; 
     }
 
@@ -97,6 +94,4 @@ public class Solution {
         bufferedReader.close();
         bufferedWriter.close();
     }
-}public class Solution {
-    
 }

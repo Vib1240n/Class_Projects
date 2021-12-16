@@ -1,0 +1,28 @@
+INSERT INTO Artist VALUES('Vibhore','1901-05-05','1995-02-01','Recluse','Germany');
+INSERT INTO Artist VALUES('Jesus','1901-07-05','1995-02-01','Painting','Paris');
+INSERT INTO Artist VALUES('Ivy','1901-02-05','1995-02-01','Recluse','USA');
+INSERT INTO Artist VALUES('Jake','1901-03-05','1995-02-01','Painting','London');
+
+INSERT INTO Art_object VALUES('6767','1913','Pond','Painting of a Duck','Vibhore');
+INSERT INTO Art_object VALUES('0002','1953','sky','Painting of the sky','Jesus');
+INSERT INTO Art_object VALUES('3434','1975','Ocean','Painting of Ocean','Ivy');
+INSERT INTO Art_object VALUES('4577','1923','Land','Painting of a Land','Jake');
+
+INSERT INTO Painting VALUES('6767','Oil','Contemporary','1913-02-01');
+INSERT INTO Painting VALUES('0002','Oil','Contemporary','1913-02-01');
+INSERT INTO Painting VALUES('3434','Oil','Contemporary','1913-02-01');
+INSERT INTO Painting VALUES('4577','Oil','Contemporary','1913-02-01');
+
+INSERT INTO Exhibition VALUES('E1','2017-06-15','2018-11-11');
+INSERT INTO Exhibition VALUES('E2','2017-05-11','2018-11-11');
+INSERT INTO Exhibition VALUES('E3','2017-07-04','2018-11-11');
+INSERT INTO Exhibition VALUES('E4','2017-02-12','2018-11-11');
+
+INSERT INTO Shown_at VALUES('6767','E1');
+INSERT INTO Shown_at VALUES('0002','E2');
+INSERT INTO Shown_at VALUES('3434','E3');
+INSERT INTO Shown_at VALUES('4577','E4');
+
+
+delete from painting
+where id_no = '0002';

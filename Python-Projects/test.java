@@ -7,8 +7,9 @@ public class test{
         Scanner in = new Scanner(System.in);
         System.out.print("Enter a number");
         int c = in.nextInt();
-        int d = a+b+c;10
+        int d = a+b+c;
         System.out.print(d);
+        in.close();
         
 
     }

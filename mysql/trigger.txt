@@ -1,0 +1,12 @@
+DELIMITER $$
+    Create trigger Remove
+    after delete on Painting
+    for each row
+    Begin
+        if (OLD.id_no is Not Null) then
+        DELETE FROM Shown_at
+        Where OLD.id_no = art;
+        DELETE FROM Art_object
+        Where OLD.id_no = id_no;
+        end if;
+    end$$

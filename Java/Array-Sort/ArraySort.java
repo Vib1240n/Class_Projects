@@ -10,6 +10,7 @@ class SortSearch{                                                               
         int j =0;
         while(j < 1 ) {
             for (int i = 0; i < array.length; i++) {
+                
                 for (int k = 0; k < array.length-i-1; k++) {
                     if (array[k][constant] > array[k+1][constant]) {
                         int temp = array[k][constant];
