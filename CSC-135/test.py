@@ -1,9 +1,6 @@
 #skjdfaskdaksdaksd
 
-def print_string(sfd):
-    sfd = "Name"
-    print(sfd)
-    bl = True
-    print(bl)
-    
-print_string
+numlist = [1,2,3,4,5]
+numlist.remove(2)
+
+print(numlist)

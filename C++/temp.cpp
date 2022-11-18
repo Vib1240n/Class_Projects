@@ -8,7 +8,7 @@ char coupon;
 double price;
 double total;
 
-int main()
+int main(char argv)
 {
     
   while (repeat != "-1")

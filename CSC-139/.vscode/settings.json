@@ -3,5 +3,6 @@
     "*.rmd": "markdown",
     "test.C": "cpp",
     "basic.C": "cpp"
-  }
+  },
+  "C_Cpp.errorSquiggles": "Disabled"
 }

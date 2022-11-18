@@ -1,0 +1,9 @@
+{
+    "toolchains": [
+        {
+            "name": "Clang",
+            "path": "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+        },
+
+    ]
+}

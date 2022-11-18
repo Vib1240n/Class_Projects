@@ -19,6 +19,7 @@ class hamt:
             self._children = children
 
     def _set(self, key, value, hashbits):
+        
         # Each node encountered during search will get altered.
         # To maintain persistence, each is duplicated, updated, returned.
         if (self._key == key):

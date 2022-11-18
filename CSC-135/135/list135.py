@@ -1,6 +1,4 @@
 from pyparsing import empty
-
-
 class list135:
     def __init__(self, first_item = None, rest_of_list = None):
         self._first_item = first_item
@@ -23,18 +21,11 @@ class list135:
         return count
 
     def __str__(self) -> str:
-        # The tail end of the list
         current = self.rest()
-        # [3] self.first returns head of list
         in_list = "(" + str(self.first())
-        # Each while iteration effectively does
         while current is not None:
-            # [6] : self.rest().first()
             in_list += ', ' + str(current.first())
-            # [7] : self.rest().rest().first()
-            # [5] : self.rest().rest().rest().first()
             current = current.rest()
-            # [None] : self.rest().rest().rest().rest()
         return in_list + ")"
 
     def rest(self):
@@ -42,13 +33,40 @@ class list135:
     
     def empty(self):
         return self._rest_of_list == None
+    
+# Rerverse using recursion
+
+def _reverse_rec(lst_obj, acc):
+    if lst_obj.rest() is None:
+        return acc
+    else:
+        acc = acc.cons(lst_obj.first())
+        return _reverse_rec(lst_obj.rest(), acc)
+
+# 1 2 3 4 
+# acc = 5
+# lst_obj.rest = 1 2 3 4 
+
+# Reverse using loops
+
+# def _reverse(lst, acc):
+#     while lst.rest() is not None:
+#         acc = acc.cons(lst.first())
+#         lst = lst.rest()
+#     return acc
 
 
-v_01 = list135(5)
+
+def reverse(lst:list135):
+    acc = list135()
+    return _reverse_rec(lst, acc)
+
+
+v_01 = list135(2)
 v_02 = v_01.cons(7)
 v_03 = v_02.cons(6)
 v_04 = v_03.cons(3)
 v_05 = v_04.cons(1)
-print(v_01)
 print(v_05)
-print(v_05.len())
+print("Org: {}".format(v_05))
+print("Reversed: {}".format(reverse(v_05)))
