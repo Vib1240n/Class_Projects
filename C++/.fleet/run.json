@@ -1,5 +1,17 @@
 {
     "configurations": [
+        {
+            "type": "command",
+            "name": "temp.cpp",
+            "program": "gcc",
+            "args": ["$FILE$"],
+        },
+        {
+            "type": "command",
+            "name": "temp_139.c",
+            "program": "/usr/bin/gcc",
+            "args": ["./temp_139.c"],
+        },
         
     ]
 }
