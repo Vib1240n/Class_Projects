@@ -1,6 +1,6 @@
 # **Introduction**
 
-1. This repository holds all the files from _Spring 2021_ Computer Science classes.
+1. This repository holds all the files from _Sac State 2020-2023_ Computer Science classes.
 2. Files are broken down into directories according to their respective languages.
 
 ## **Projects**
@@ -27,3 +27,6 @@
 
 1. Contains all the temporary files from other authors' projects
 
+### CSC-XXX
+
+1. Contains all the files from the respective classes

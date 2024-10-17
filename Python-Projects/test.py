@@ -1,5 +1,6 @@
-googolplex = pow(10, 10000000)
-length = googolplex.bit_length()
-string = str(googolplex)
-print(len(string) - 1)
-print(length)
+
+
+word = 'world'
+seq = '{\'\\\\\"0\\\\\"\':[\'\\\\\"'
+seq2 = '\\\\\"\']}'
+print('{}{}{}'.format(seq,word,seq2))
